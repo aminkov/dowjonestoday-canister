@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightseagreen;
+    padding: 15px;}
+
+.possibilities-entry {
+	font-size:12px !important;
+}
+.spacer {
+	width:15px;
+}
+
+div#pen-picks input {
+	width:60px;
+    height: 60px;
+    padding: 10px;
+}
+#selected-pen-number {
+	font-weight:bold;
+    font-size: 24px;
+}
+#control-area label {
+	padding-right:15px;
+	font-weight:bold;
+}
+
+#control-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#display_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    color: blue;
+    text-align: center; /* Ensures text inside the div is centered */
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    margin: 10px auto; /* Centers the div horizontally with auto margins */
+}
+
+.control-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures even spacing */
+    width: 100%;
+    max-width: 600px; /* Optional: Set a max-width for the control area */
+    margin-bottom: 10px;
+}
+
+.option-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distributes items evenly */
+    width: 100%;
+}
+
+.option-item {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 8px;
+}
+
+.control-item {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 8px;
+}
+
+.control-button {
+    width: 80%; /* Full width of the control-item */
+    height: 35px; /* Fixed height */
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Adjust the font size */
+    background-color: #ddd;
+    color: black;
+}
+
+@media (min-width: 600px) {
+    .control-item{
+        width: calc(33.33% - 10px); /* Three items per row with some margin */
+    }
+}
+
+/*The Input fields after the pen is picked.*/
+.pen-picked {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.pen-picked:hover {
+	background:#FFCCCC;
+}
+
+#pen-tool {
+	text-align:center;
+    padding: 10px;
+    font-size: 22px;
+}
+#pen-tool input {
+	border:1px solid #ccc;
+}
+
+/*The Cells that has error*/
+.problem-cell {
+	color:#f00;
+}
+
+#timer {
+	font-weight:bold;
+    font-size: 44px;
+}
+#pause-hider {
+	display:none;
+	position:absolute;
+	top:auto;
+	left:auto;
+	text-align:center;
+	vertical-align:middle;
+	width:320px;
+	height:345px;
+	background:#fff;
+}
+.print-only {
+	display:none;
+}
+
+/* Additional code added to make sudoku full screeen */
+.sudoku-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+}
+
+/* Add CSS for the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+}
+
+.footer-content a {
+    margin-right: 15px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-content a:hover {
+    color: #04AA6D;
+    font-size: 14px;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-button:hover {
+    background-color: #555;
+}
+
+.social-button.twitter { background-color: #1DA1F2; }
+.social-button.facebook { background-color: #3b5998; }
+.social-button.linkedin { background-color: #0077b5; }
+.social-button.instagram { background-color: #E1306C; }
