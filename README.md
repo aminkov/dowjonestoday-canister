@@ -14,7 +14,7 @@ A simple web application that displays the current value of the Dow Jones Indust
 - **JavaScript**: For fetching and updating the DJIA value.
 - **API**: Utilizes a financial data API to get real-time DJIA values.
 
-- Live Demo: [Dow Jones Today](https://dowjonesotday.online).
+- Live Demo: [Dow Jones Today](https://dowjonestoday.online).
 
 
   
