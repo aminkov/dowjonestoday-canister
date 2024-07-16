@@ -1,6 +1,6 @@
 # Dow Jones Today
 
-A simple web application that displays the current value of the Dow Jones Industrial Average (DJIA). This project fetches real-time DJIA data and presents it in a clean, minimalistic interface.
+A simple web application that runs on the ICP blockchain as a canister and displays the current value of the Dow Jones Industrial Average (DJIA). This project fetches real-time DJIA data and presents it in a clean, minimalistic interface.
 
 ## Features
 
